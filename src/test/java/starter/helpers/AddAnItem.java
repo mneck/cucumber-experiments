@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 public class AddAnItem {
 
     public static Performable withName(String itemName){
-        return Task.where("{0} adds an item with name "+itemName,
+        return Task.where("{0} adds an item with name " + itemName,
                 Enter.theValue(itemName)
                         .into(TodoListPage.ITEM_NAME_FIELD)
                         .thenHit(Keys.ENTER)
